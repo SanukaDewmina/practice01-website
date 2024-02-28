@@ -1,0 +1,267 @@
+.header {
+  background-color: white;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  
+}
+.left-section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  
+}
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 80px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+ 
+}
+.right-section {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+  flex-shrink: 0;
+  
+}
+.h-d-menu {
+  height: 25px;
+  margin-left: 24px;
+  margin-right: 10px;
+
+}
+.y-logo {
+  height: 20px;
+  margin-left: 10px;
+  
+
+}
+.search-1 {
+height: 20px;
+width: 40px;
+}
+.voice-sea {
+  height: 40px;
+  width: 40px;
+}
+.search-box {
+  flex: 1;
+  height: 30px;
+  font-size: 18px;
+  padding-left: 20px;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 2px rgba(134, 133, 133, 0.15);
+  
+}
+.search-box::placeholder {
+  font-family: roboto,Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+}
+
+.search-1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+ width: 70px;
+ height: 34px;
+ border: 1px solid rgb(231, 231, 231);
+ background-color: rgba(246, 246, 246, 0.87);
+ margin-left: -1px;
+}
+.search-1:hover {
+  background-color: rgb(230, 230, 230);
+}
+.search-1 .tooltip {
+  position: absolute;
+  font-size: 14px;
+  background-color: rgb(53, 52, 52);
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+  bottom: -29px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  }
+
+.search-1:hover .tooltip {
+  opacity: 1;
+}
+
+.voice-sea {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.voice-sea .tooltip {
+  
+  position: absolute;
+  font-size: 14px;
+  background-color: rgb(53, 52, 52);
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+  bottom: -27px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+
+.voice-sea:hover .tooltip {
+  opacity: 1;
+}
+
+
+.s-icon {
+  height: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.voice-sea{
+  height: 39px;
+  width: 39px;
+  margin-left: 6px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(251, 251, 251, 0.911);
+
+
+}
+.v-icon {
+height: 25px;
+margin-top: 6px;
+
+}
+.m-i-1{
+    height: 24px;
+}
+.m-i-2{
+  height: 24px;
+
+}
+.m-i-3{
+  height: 24px;
+
+}
+.m-i-4{
+  height: 30px;
+  border-radius: 50%;
+
+}
+.notification-item-con {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+.notification-count {
+  font-family: roboto,Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  position: absolute;
+  background-color: rgb(199, 12, 12);
+  color: white;
+  border-radius: 50%;
+  right: -3px;
+  top: -3px;
+
+}
+.notification-item-con .notification-topic{
+  position: absolute;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(53, 52, 52);
+  bottom: -30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  opacity: 0;
+  transition: opacity 0.15s;
+
+}
+.notification-item-con:hover .notification-topic {
+  opacity: 1;
+}
+
+
+.creat-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.creat-button .create-but-topic {
+  position: absolute;
+  background-color: rgb(65, 64, 64);
+  color: white;
+  white-space: nowrap;
+  bottom: -30px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  
+}
+.creat-button:hover .create-but-topic {
+  opacity: 1;
+}
+.creat-button:active .create-but-topic {
+  background-color: blue;
+}
+
+.y-apps {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+.y-apps .app-topic{
+   position: absolute;
+   background-color: rgb(59, 58, 58);
+   color: white;
+   font-size: 14px;
+   white-space: nowrap;
+   bottom: -30px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 4px;
+   padding-right: 4px ;
+   border-radius: 2px;
+   opacity: 0;
+   transition: opacity 0.15s;
+   pointer-events: none;
+
+}
+.y-apps:hover .app-topic {
+  opacity: 1;
+
+}
+
